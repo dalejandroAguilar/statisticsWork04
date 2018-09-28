@@ -1,0 +1,31 @@
+%!TEX root = ./main.tex
+\newcommand{\diffm}[3]{\frac{\partial^2 #1 }{\partial #3 \partial #2}}
+\newcommand{\diffe}[3][2]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\newcommand{\diff}[2]{\frac{\partial #1}{\partial #2}}
+\renewcommand{\vec}[1]{\ensuremath{\mathbf{#1}}}
+\providecommand{\keywords}[1]{\textbf{Palabras clave---} #1}
+\newcommand{\enclose}[1]{\textcircled{\footnotesize #1}}
+\newcommand{\comillas}[1]{``#1''}
+\newcommand{\sub}[2]{\ensuremath{{#1}_{#2}}}
+\newcommand{\supa}[2]{\ensuremath{\textrm{{#1}}^{#2}}}
+
+
+\newcommand{\half}{\ensuremath{\frac{1}{2}}}
+
+\newcommand{\then}{\rightarrow}
+\newcommand{\scriptr}{\mathcalligra{r}\,}
+
+\newcommand{\boldscriptr}{\pmb{\mathcalligra{r}}\,}
+
+\newenvironment{answer}
+    {\begin{tcolorbox}[breakable, enhanced jigsaw]}
+    {\end{tcolorbox}}
+
+%--------------------------------------------------
+
+\newcounter{question}[section]
+    \newenvironment{question}[1][]{\refstepcounter{question}\par\medskip
+    \noindent \textbf{\thequestion. #1} \rmfamily}{\medskip}
+    
+\newcommand*{\Scale}[2][4]{\scalebox{#1}{$#2$}}%
+\newcommand*{\Resize}[2]{\resizebox{#1}{!}{$#2$}}%
